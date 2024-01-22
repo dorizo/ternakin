@@ -79,7 +79,7 @@ div.center-cropped img {
     border: 1px solid #c6da37;
     background: #f0f0f0;
     border-radius: 5px;
-    padding: 0px 5px 30px 5px
+    padding:0px 5px 15px 5px;
 }
 
 .produk{
