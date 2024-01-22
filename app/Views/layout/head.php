@@ -67,12 +67,7 @@ div.center-cropped {
   overflow:hidden;
 }
 div.center-cropped img {
-  object-fit: cover;
   height: 100%;
-  min-width: 100%;
-  left: 50%;
-  position: relative;
-  transform: translateX(-50%);
 }
 .main{
   margin: 0px 10px !important;
