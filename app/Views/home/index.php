@@ -54,7 +54,7 @@ foreach ($newproduk as $key1 => $value1) {
   <div class="col-6 mt-2 p-2">
     <div class="main">
     <div class="produk">
-      <div class="center-cropped p-5">
+      <div class="center-cropped pl-4 pr-4">
         <img class="card-img-top" src="<?=base_url("assets/upload/image")."/".$value1["gambar"]?>"  class="img-responsive" alt="Card image cap">
       </div>
     </div>

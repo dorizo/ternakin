@@ -63,7 +63,7 @@ $site        = $konfigurasi->listing();
   }
 }
 div.center-cropped {
-  height: 230px;
+  height: 170px;
   overflow:hidden;
 }
 div.center-cropped img {
@@ -76,14 +76,18 @@ div.center-cropped img {
 }
 .main{
   margin: 0px 10px !important;
-  border-radius:1px solid #000;
+    border: 1px solid #c6da37;
+    background: #f0f0f0;
+    border-radius: 5px;
+    padding: 0px 5px 30px 5px
 }
 
 .produk{
-background:url("<?=base_url("citmtemplate/image/Product.png")?>");
+background:url("<?=base_url("citmtemplate/image/Product1.png")?>");
 background-repeat: no-repeat;
-background-size: 80%;
+background-size: 100%;
 background-position: center center;
+height:250px;
 }
 
 </style>
