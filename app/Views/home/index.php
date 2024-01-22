@@ -51,17 +51,26 @@ $site         = $konfigurasi->listing();
 foreach ($newproduk as $key1 => $value1) {
 ?>
 
-  <div class="card col-6 mt-2 p-0">
-    <div class="center-cropped">
-    <img class="card-img-top" src="<?=base_url("assets/upload/image")."/".$value1["gambar"]?>"  class="img-responsive" alt="Card image cap">
+  <div class="col-6 mt-2 p-2">
+    <div class="main">
+    <div class="produk">
+      <div class="center-cropped p-5">
+        <img class="card-img-top" src="<?=base_url("assets/upload/image")."/".$value1["gambar"]?>"  class="img-responsive" alt="Card image cap">
+      </div>
     </div>
+    <!-- <h6 class="card-title"><?=$value1["judul_galeri"]?></h6> -->
+    <hr />
+    
+    <small class="text-muted"><?=rupiah($value1["website"])?></small>
+    
+<button type="button" class="btn btn-outline-warning float-right" style="font-size: 10px;">DETAIL</button>
+  </div>
+    <!--
     <div class="card-body">
-      <h5 class="card-title"><?=$value1["judul_galeri"]?></h5>
       <p class="card-text"><?=$value1["isi"]?></p>
     </div>
     <div class="card-footer">
-      <small class="text-muted"><?=rupiah($value1["website"])?></small>
-    </div>
+    </div> -->
   </div>
 <?php
 }

@@ -63,7 +63,7 @@ $site        = $konfigurasi->listing();
   }
 }
 div.center-cropped {
-  height: 200px;
+  height: 230px;
   overflow:hidden;
 }
 div.center-cropped img {
@@ -73,6 +73,17 @@ div.center-cropped img {
   left: 50%;
   position: relative;
   transform: translateX(-50%);
+}
+.main{
+  margin: 0px 10px !important;
+  border-radius:1px solid #000;
+}
+
+.produk{
+background:url("<?=base_url("citmtemplate/image/Product.png")?>");
+background-repeat: no-repeat;
+background-size: 80%;
+background-position: center center;
 }
 
 </style>
