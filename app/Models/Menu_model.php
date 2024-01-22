@@ -65,6 +65,20 @@ class Menu_model extends Model
 
         return $query->getResultArray();
     }
+    
+
+    public function slide()
+    {
+        $builder = $this->db->table('galeri');
+        $builder->select('*');
+        $builder->join('kategori_galeri', 'kategori_galeri.id_kategori_galeri = galeri.id_kategori_galeri', 'LEFT');
+        $builder->orderby('galeri.tanggal' , 'desc');
+        $builder->where("jenis_galeri","Homepage");
+        $builder->limit(9);
+        $query = $builder->get();
+
+        return $query->getResultArray();
+    }
     // Menu layanan
     public function layanan()
     {

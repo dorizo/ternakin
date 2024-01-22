@@ -158,6 +158,10 @@ function checksiswa()
 
          return date('Y-m-d', strtotime($tanggal));
      }
+     function rupiah($angka){
+        $hasil_rupiah = "Rp " . number_format($angka,0,',','.');
+	return $hasil_rupiah;
+     }
 
     // Romawi
      function romawi($bulan)
