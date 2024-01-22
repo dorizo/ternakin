@@ -86,7 +86,7 @@ div.center-cropped img {
 background:url("<?=base_url("citmtemplate/image/Product1.png")?>");
 background-repeat: no-repeat;
 background-size: 100%;
-background-position: center center;
+background-position: top center;
 height:250px;
 }
 
