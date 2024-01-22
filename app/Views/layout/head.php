@@ -71,14 +71,14 @@ div.center-cropped img {
 }
 .main{
   margin: 0px 10px !important;
-    border: 1px solid #c6da37;
-    background: #f0f0f0;
+    border: 1px solid #f26a21;
+    background: #fcfafa;
     border-radius: 5px;
     padding:0px 5px 15px 5px;
 }
 
 .produk{
-background:url("<?=base_url("citmtemplate/image/Product1.png")?>");
+background:url("<?=base_url("citmtemplate/image/Product2.png")?>");
 background-repeat: no-repeat;
 background-size: 100%;
 background-position: top center;

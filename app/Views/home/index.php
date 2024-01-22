@@ -61,7 +61,7 @@ foreach ($newproduk as $key1 => $value1) {
     <!-- <h6 class="card-title"><?=$value1["judul_galeri"]?></h6> -->
     <hr />
     
-    <small class="text-muted"><?=rupiah($value1["website"])?></small>
+    <small class="text-muted" style="font-size:10px"><?=rupiah($value1["website"])?></small>
     
 <button type="button" class="btn btn-outline-warning float-right" style="font-size: 10px;">DETAIL</button>
   </div>
