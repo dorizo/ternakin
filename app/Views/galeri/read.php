@@ -29,7 +29,7 @@
       <main class="col-lg-6">
         <div class="ps-lg-3">
           <h4 class="title text-dark">
-            <?=$value["judul_galeri"]?>
+            <?=$galeri["judul_galeri"]?>
           </h4>
           <div class="d-flex flex-row my-3">
             <div class="text-warning mb-1 me-2">
