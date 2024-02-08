@@ -23,24 +23,25 @@
             <form  method="post">
                 <?= csrf_field() ?>
             <div class="form-group">
-                <label for="no">NAMA</label>
+                <label for="no">Nama</label>
                 <input type="text" class="form-control" id="nama_lengkap" name="nama_lengkap">
-                <small id="emailHelp" class="form-text text-muted">Nama Lengkap Sesuai KTP</small>
+                <small id="emailHelp" class="form-text text-muted">(Nama lengkap sesuai NIK)</small>
             </div>
             <div class="form-group">
-                <label for="no">NO whatsapp</label>
+                <label for="no">No. WhatsApp</label>
                 <input type="text" class="form-control" id="telp" name="telp">
-                <small id="emailHelp" class="form-text text-muted">NO whatsapp wajib aktif karena di gaunakan untuk informasi penting</small>
+                <small id="emailHelp" class="form-text text-muted">(Pastikan nomor WA aktif untuk memudahkan komunikasi)</small>
             </div>
             <div class="form-group">
-                <label for="no">ALAMAT PENGIRIMAN</label>
+                <label for="no">Alamat</label>
                 <input type="text" class="form-control" id="alamat" name="alamat">
-                <small id="emailHelp" class="form-text text-muted">Sesuai alamat dikirim untuk Kurban</small>
+                <small id="emailHelp" class="form-text text-muted">(Masukkan alamat lengkap)</small>
             </div>
             
             <div class="form-group">
-                <label for="no">TANGGAL PENGIRIMAN</label>
+                <label for="no">Tanggal Pengiriman</label>
                 <input type="date" class="form-control" id="konfirmasi" name="konfirmasi">
+                <small id="emailHelp" class="form-text text-muted">(Pilih tanggal pengiriman hewan kurban jika titipan hewan akan dikurbankan sendiri)</small>
             </div>
            
            
