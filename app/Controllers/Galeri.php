@@ -66,7 +66,11 @@ class Galeri extends BaseController
     }
     public function success(){
         $data = [
-        'content'     => 'galeri/success',
+        'content'     => 'galeri/success', 
+            
+            'title'  => "Galeri disni",
+        'description' =>"Galeri disni",
+        'keywords'    => "Galeri disni",
         ];
     echo view('layout/wrapper', $data);
     }
