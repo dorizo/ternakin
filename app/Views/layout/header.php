@@ -17,11 +17,11 @@ $menu_layanan = $menu->layanan();
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <div class="mr-auto"></div>
   <ul class="navbar-nav ">
-        <li class="nav-item"><a  class="nav-link"  href="#">Home</a></li>
-        <li  class="nav-item"><a  class="nav-link"  href="#">Domba</a></li>
-        <li  class="nav-item"><a  class="nav-link"  href="#">Sapi</a></li>
-        <li  class="nav-item"><a  class="nav-link"  href="#">Kurban</a></li>
-        <li  class="nav-item"><a  class="nav-link"  href="#">Investasi saya</a></li>
+        <li class="nav-item"><a  class="nav-link"  href="<?=base_url("/")?>">Home</a></li>
+        <li  class="nav-item"><a  class="nav-link"  href="<?=base_url("Kurban/detail/kambing")?>">Domba</a></li>
+        <li  class="nav-item"><a  class="nav-link"  href="<?=base_url("Kurban/detail/sapi")?>">Sapi</a></li>
+        <li  class="nav-item"><a  class="nav-link"  href="<?=base_url("Kurban/detail/kambing")?>">Kurban</a></li>
+        <li  class="nav-item"><a  class="nav-link"  href="<?=base_url("Kontak")?>">Investasi saya</a></li>
        
       </ul>
   </div>
