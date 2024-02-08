@@ -1,314 +1,151 @@
-<main class="main-content site-wrapper-reveal">
-<section class="page-title-area bg-img" data-bg-img="<?=base_url("template")?>/assets/img/photos/bg-page1.jpg">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="page-title-content">
-               </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--== Start Page Title Area ==-->
-    <div class="page-title-area page-title-area2">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="page-title-content content-style-2">
-              <div class="bread-crumbs">
-                <?php
-               $crumbs = explode("/",$_SERVER["REQUEST_URI"]);
-                foreach ($crumbs as $segment) {
-                  ?>
-                  
-                  <a href="index.html"><?=urldecode($segment);?><span class="breadcrumb-sep">></span></a>
-                <?php
-                  }
-                ?>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>  
-    <!--== End Page Title Area ==-->
 
-    <!--== Start Shop Area ==-->
-    <section class="product-area shop-single-product">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="single-product-slider">
-              <div class="product-dec-slider-right">
-                <div class="single-product-thumb">
-                  <div class="single-product-thumb-slider">
-                    <div class="zoom zoom-hover">
-                      <div class="thumb-item">
-                        <a class="lightbox-image" data-fancybox="gallery" href="<?=base_url("assets/upload/image/".$galeri["gambar"])?>">
-                          <img src="<?=base_url("assets/upload/image/".$galeri["gambar"])?>" alt="Image-HasTech">
-                        </a>
-                      </div>
-                    </div>
-                    <?php foreach ($detail as $key => $value) {
-                      # code...
-                   ?>
-                    <div class="zoom zoom-hover">
-                      <div class="thumb-item">
-                        <a class="lightbox-image" data-fancybox="gallery" href="<?=base_url("assets/upload/image/".$galeri["gambar"])?>">
-                          <img src="<?=base_url("assets/upload/image/".$value["gambar"])?>" alt="Image-HasTech">
-                        </a>
-                      </div>
-                    </div>
-                    <?php
-                     }
-                    ?>
-                   
-                  </div>
-                  
-                </div>
-              </div>
-              <div class="product-dec-slider-left">
-                <div class="single-product-nav">
-                  <div class="single-product-nav-slider">
-                    <div class="nav-item">
-                      <img src="<?=base_url("assets/upload/image/thumbs/".$galeri["gambar"])?>" alt="Image-HasTech">
-                    </div>
-                    <?php foreach ($detail as $key => $value) {
-                      # code...
-                   ?>
-                    <div class="nav-item">
-                      <img src="<?=base_url("assets/upload/image/thumbs/".$value["gambar"])?>" alt="Image-HasTech">
-                    </div>
-                    <?php
-                     }
-                    ?>
-                   
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="single-product-info">
-              <h4 class="title"><?=$galeri["judul_galeri"]?><?php //print_r($galeri)?></h4>
-              <div class="product-rating">
-                <!-- <div class="ratting-icons">
-                  <i class="lastudioicon-star-rate-1"></i>
-                  <i class="lastudioicon-star-rate-1"></i>
-                  <i class="lastudioicon-star-rate-1"></i>
-                  <i class="lastudioicon-star-rate-1"></i>
-                  <i class="lastudioicon-star-rate-1"></i>
-                </div>
-                <div class="review">
-                  <a href="#/"></a>
-                  <p><span></span>k</p>
-                </div> -->
-              </div>
-              <div class="prices">
-                <span class="price"><?=$galeri["website"]?></span>
-              </div>
-              <?=$galeri["isi"]?>
-              <div class="quick-product-action">
-                <div class="action-top">
-                 
-                  <a class="btn-theme btn-black" href="shop-cart.html">WHATSAPP</a>
-                </div>
-                
-              </div>
-              <!-- <div class="product-ratting">
-                <div class="product-sku">
-                  SKU: <span>REF. LA-276</span>
-                </div>
-              </div> -->
-              <!-- <div class="product-categorys">
-                <div class="product-category">
-                  Category: <span>Uncategorized</span>
-                </div>
-              </div>
-              <div class="widget">
-                <h3 class="title">Tags:</h3>
-                <div class="widget-tags">
-                  <ul>
-                    <li><a href="shop.html">Blazer,</a></li>
-                    <li><a href="shop.html">Fashion,</a></li>
-                    <li><a href="shop.html">wordpress,</a></li>
-                  </ul>
-                </div> -->
-              </div>
-              <div class="product-social-info">
-                <a href="#"><span class="lastudioicon-b-facebook"></span></a>
-                <a href="#"><span class="lastudioicon-b-twitter"></span></a>
-                <a href="#"><span class="lastudioicon-b-linkedin"></span></a>
-                <a href="#"><span class="lastudioicon-b-pinterest"></span></a>
-              </div>
-              <div class="product-nextprev">
-                <a href="shop-single-product.html">
-                  <i class="lastudioicon-arrow-left"></i>
-                </a>
-                <a href="shop-single-product.html">
-                  <i class="lastudioicon-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--== End Shop Area ==-->
-
-    <!--== Start Shop Tab Area ==-->
-    <!-- <section class="product-area product-description-review-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="product-description-review">
-              <ul class="nav nav-tabs product-description-tab-menu" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="product-desc-tab" data-bs-toggle="tab" data-bs-target="#productDesc" type="button" role="tab" aria-controls="productDesc" aria-selected="true">Description</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="product-review-tab" data-bs-toggle="tab" data-bs-target="#productReview" type="button" role="tab" aria-controls="productReview" aria-selected="false">Reviews (1)</button>
-                </li>
-              </ul>
-              <div class="tab-content product-description-tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="productDesc" role="tabpanel" aria-labelledby="product-desc-tab">
-                  <div class="product-desc">
-                    <div class="product-desc-row">
-                      <div class="product-thumb">
-                        <img src="assets/img/shop/93.jpg" alt="Moren-Shop">
-                      </div>
-                      <div class="product-content">
-                        <h4>Made with love</h4>
-                        <p>Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque. Vestibulum ut sem laoreet, feugiat tellus at.</p>
-                        <p>Duis efficitur gravida tincidunt. Nam sodales vel odio at sollicitudin. Vestibulum sed rutrum nisl. Nulla diam arcu, facilisis nec blandit non, interdum et orci. Nam aliquam lorem vitae risus molestie convallis.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="productReview" role="tabpanel" aria-labelledby="product-review-tab">
-                  <div class="product-review">
-                    <div class="product-review-comments">
-                      <h4 class="title">1 review for <span>Product Simple</span></h4>
-                      <div class="comment-item">
-                        <div class="thumb">
-                          <img src="assets/img/icons/s1.jpg" alt="Moren-Shop">
-                        </div>
-                        <div class="content">
-                          <div class="rating">
-                            <span class="lastudioicon-star-rate-1"></span>
-                            <span class="lastudioicon-star-rate-1"></span>
-                            <span class="lastudioicon-star-rate-1"></span>
-                            <span class="lastudioicon-star-rate-1"></span>
-                            <span class="lastudioicon-star-rate-1"></span>
-                          </div>
-                          <h5 class="meta"><span>Agnes Wilson </span> – December 24, 2020</h5>
-                          <span class="review">There are no reviews yet.</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="product-review-form">
-                      <h3 class="title">Add a review</h3>
-                      <div class="rating">
-                        <span class="rating-title">Your rating *</span>
-                        <span class="lastudioicon-star-rate-2"></span>
-                        <span class="lastudioicon-star-rate-2"></span>
-                        <span class="lastudioicon-star-rate-2"></span>
-                        <span class="lastudioicon-star-rate-2"></span>
-                        <span class="lastudioicon-star-rate-2"></span>
-                      </div>
-                      <form action="#" method="post">
-                        <div class="review-form-content">
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <label for="reviewFormTextarea">Your review *</label>
-                                <textarea class="form-control" id="reviewFormTextarea" name="comment" rows="7" required></textarea>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="form-group">
-                                <button class="btn btn-theme btn-black" type="submit">Submit</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!--== End Shop Tab Area ==-->
-
-    <!--== Start Products Area Wrapper ==-->
-    <section class="product-area related-products-area">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 m-auto">
-            <div class="section-title text-center">
-              <h2 class="title">Related Products</h2>
+<!-- content -->
+<section class="py-5">
+  <div class="container">
+    <div class="row gx-5">
+      <aside class="col-lg-6">
+        <div class="border rounded-4 mb-3 d-flex justify-content-center">
+          <a data-fslightbox="mygalley" class="rounded-4" target="_blank" data-type="image" href="<?=base_url("assets/upload/image/".$galeri["gambar"])?>">
+            <img style="max-width: 100%; max-height: 100vh; margin: auto;" class="rounded-4 fit" src="<?=base_url("assets/upload/image/".$galeri["gambar"])?>" />
             
-            </div>
-          </div>
+          </a>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="swiper-container product4-slider-container">
-             
-            <div class="swiper-wrapper">
-                <?php foreach ($kategori as $key => $value) { ?>
-                  <div class="swiper-slide">
-                  <!-- Start Product Item -->
-                  <div class="product-item">
-                    <div class="product-thumb">
-                    <a href="<?=base_url("galeri/read/".$value["id_galeri"]."/".$value["judul_galeri"])?>">
-                        <img src="<?=base_url("assets/upload/image/thumbs/".$value["gambar"])?>" alt="Moren-Shop">
-                        <span class="bg-thumb" data-bg-img="<?=base_url("assets/upload/image/thumbs/".$value["gambar"])?>" style="background-image: url(_assets/img/shop/d2-2.html);"></span>
-                        <span class="thumb-overlay"></span>
-                      </a>
-                      <div class="product-action action-style3">
-                        <a class="action-cart ht-tooltip" data-tippy-content="Add to cart" href="shop-cart.html" title="Add to cart">
-                          <i class="lastudioicon-shopping-cart-3"></i>
-                        </a>
-                        <a class="action-quick-view ht-tooltip" data-tippy-content="Quick View" href="javascript:void(0);" title="Wishlist">
-                          <i class="lastudioicon-search-zoom-in"></i>
-                        </a>
-                        <a class="action-wishlist ht-tooltip" data-tippy-content="Add to wishlist" href="shop-wishlist.html" title="Add to wishlist">
-                          <i class="lastudioicon-heart-2"></i>
-                        </a>
-                        <a class="action-compare ht-tooltip" data-tippy-content="Add to compare" href="shop-compare.html" title="Add to compare">
-                          <i class="lastudioicon-compare"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="product-info info-style3">
-                      <div class="content-inner">                  
-                        <h4 class="title"><a href="shop-single-product.html"><?=$value["judul_galeri"]?></a></h4>
-                        <div class="prices">
-                          <span class="price"><?=$value["website"]?></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End Product Item -->
-                </div>
+        <div class="d-flex justify-content-center mb-3">
+         
+          <?php foreach ($detail as $key => $value) {
+                      # code...
+                   ?>
+                    <a data-fslightbox="mygalley" class="border mx-1 rounded-2" target="_blank" data-type="image" href="<?=base_url("assets/upload/image/".$value["gambar"])?>" class="item-thumb">
+                      <img width="60" height="60" class="rounded-2" src="<?=base_url("assets/upload/image/".$value["gambar"])?>" />
+                    </a>
+                  
+                    <?php
+                     }
+                    ?>
+        </div>
+        <!-- thumbs-wrap.// -->
+        <!-- gallery-wrap .end// -->
+      </aside>
+      <main class="col-lg-6">
+        <div class="ps-lg-3">
+          <h4 class="title text-dark">
+            <?=$value["judul_galeri"]?>
+          </h4>
+          <div class="d-flex flex-row my-3">
+            <div class="text-warning mb-1 me-2">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span class="ms-1">
+                
+              </span>
+            </div>
+            <span class="text-success ms-2">In stock</span>
+          </div>
 
-                  <?php
-                # code...
-              };
-              ?>
-              </div>
-              </div>
-            </div>
+          <div class="mb-3">
+            <span class="h5"><?=rupiah($galeri["website"])?></span>
+            <span class="text-muted"> / per Ekor</span>
           </div>
-        </div>
+
+          <p>
+          <?=$galeri["isi"]?>
+          </p>
+
+        
+
+          <hr />
+
+          
+          <button href="#" class="btn btn-warning shadow-0" data-toggle="modal" data-target="#staticBackdrop"> BELI SEKARANG </button>
+           </div>
+      </main>
+    </div>
+  </div>
+</section>
+<!-- content -->
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-    </section>
-    <!--== End Products Area Wrapper ==-->
+      <div class="modal-body">
+        <h5>PERJANJIAN KERJASAMA USAHA PENGGEMUKAN KAMBING<br />
+“PROGRAM IDUL ADHA 2024”</h5>
+
+No. 001/TAB/PKS-IA/I/2024<br/><br/>
+                    <b>PASAL 1</b><br/>
+1. Pihak Pertama dan Pihak Kedua sepakat untuk melakukan hubungan kerjasama berupa usaha
+penggemukan kambing, yang akan dibiayai oleh Pihak Kedua dan dikelola dengan penuh
+tanggung jawab oleh Pihak Pertama.<br/>
+2. Usaha yang dilakukan adalah usaha penggemukan kambing dimana Pihak Pertama selaku
+pengelola TERNAKIN FARM akan menyerahkan kambing hasil setelah program penggemukan
+selesai atau saat Perjanjian ini berakhir kepada Pihak Kedua.
+
+<b>PASAL 2</b><br/>
+Usaha penggemukan kambing yang disepakati adalah usaha pembesaran kambing selama empat
+bulan terhitung mulai tanggal 1 Februari 2024 hingga 15 Juni 2024.
+
+<b>PASAL 3</b><br/>
+1. Biaya untuk pengadaan 5 (lima) ekor bibit kambing adalah sebesar Rp 14.750.000,- (empat belas
+juta tujuh ratus lima puluh ribu rupiah) yang akan digunakan untuk pembelian 5 (lima) ekor bibit
+dan dikelola sampai tanggal 15 Juni 2024 oleh Pihak Pertama.<br/>
+2. Hasil penggemukan kambing yang telah diserahterimakan Pihak Pertama kepada Pihak Kedua
+bisa diperjual belikan oleh Pihak Kedua baik kepada pasar bebas maupun dijual kembali kepada
+Pihak Pertama.<br/>
+3. Jika penjualan kambing dibeli kembali oleh Pihak Pertama maka harga minimal penjualan yang
+disepakati adalah senilai Rp 3.500.000,- (tiga juta lima ratus ribu rupiah).
+4. Seluruh hasil dari transaksi penjualan kambing akan diberikan seluruhnya untuk Pihak Kedua
+setelah dipotong biaya yang muncul saat proses penjualan terjadi.<br/>
+<b>PASAL 4</b><br/>
+Pihak Kedua menyerahkan uang sebesar Rp 14.750.000 (empat belas juta tujuh ratus lima puluh ribu
+rupiah) yang akan digunakan oleh Pihak Pertama untuk pembelian bibit dan pembesaran terhitung
+sejak tanggal 1 Februari 2024 sampai dengan tanggal 15 Juni 2024.<br/>  
+<b>PASAL 5</b><br/>
+1. Kambing yang diserahkan oleh Pihak Kedua akan dikelola di TERNAKIN FARM, yang berlokasi di
+Blok Benda, Desa Warukawung, Kecamatan Depok, Kabupaten Cirebon, Jawa Barat oleh Pihak
+Pertama yang memiliki tim yang telah berpengalaman di bidang penggemukan serta penjualan.<br/>
+2. Pihak Pertama akan menyediakan tim yang telah berpengalaman dan terlatih secara profesional
+dalam pembesaran kambing termasuk pemberian nutrisi agar kambing sehat/gemuk, menangani
+penyakit kambing, dan hal-hal yang terkait usaha penggemukan kambing lainnya.
+<br/>
+<b>PASAL 6</b><br/>
+1. Dalam hal terjadi ternak yang mati atau hilang dikarenakan kelalaian dalam pengelolaan, maka
+Pihak Pertama wajib untuk mengganti dengan kambing lain yang sama sejumlah kambing yang
+mati atau hilang.<br />
+2. Penggantian kambing yang mati atau hilang akan menyesuaikan dengan kondisi fisik terakhir
+kambing yang mengalami resiko baik mati atau hilang.<br/>
+<b>PASAL 7</b><br/>
+Perjanjian Kerjasama ini mulai berlaku dan mengikat Kedua Belah Pihak terhitung sejak ditanda
+tangani oleh Kedua Belah Pihak, dan berakhir apabila keseluruhan modal yang diberikan oleh Pihak
+Pertama telah dikembalikan oleh Pihak Kedua beserta bagi hasilnya/atau dinyatakan telah
+dikembalikan secara tertulis dari Pihak Kedua<br/>
+<b>PASAL 8</b><br/>
+1. Apabila dalam kurun waktu penggemukan kambing hingga penjualan kambing terjadi hal-hal
+yang belum diatur dalam Perjanjian Kerjasama Usaha Penggemukan Kambing ini, maka kiranya
+Pihak Pertama dan Pihak Kedua dapat menyelesaikannya dengan mengutamakan musyawarah
+dan kekeluargaan.<br/>
+2. Surat Perjanjian Kerjasama ini dibuat rangkap 2 (dua), masing-masing bermaterai cukup dan
+ditandatangani oleh kedua belah pihak, serta mempunyai kekuatan hukum yang sama. <br/>
+
+      </div>
+      <div class="modal-footer">
+      <div>
+        <input type="checkbox" id="scales" name="scales"  />
+        <label for="scales">SAYA SETUJU </label>
+      </div>
+        <button type="button" class="btn btn-primary">Beli</button>
+      </div>
+    </div>
+  </div>
+</div>
   </main>

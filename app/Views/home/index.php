@@ -63,7 +63,7 @@ foreach ($newproduk as $key1 => $value1) {
     
     <small class="text-muted" style="font-size:10px"><?=rupiah($value1["website"])?></small>
     
-<button type="button" class="btn btn-outline-warning float-right" style="font-size: 10px;">DETAIL</button>
+<a href="<?=base_url("galeri/read/".$value1["id_galeri"])?>"  class="btn btn-outline-warning float-right" style="font-size: 10px;">DETAIL</a>
   </div>
     <!--
     <div class="card-body">
