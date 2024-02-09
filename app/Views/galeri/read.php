@@ -97,7 +97,7 @@ pengelola TERNAKIN FARM akan menyerahkan kambing hasil setelah program penggemuk
 selesai atau saat Perjanjian ini berakhir kepada Pihak Kedua. <br />
 <br />
 <b>Penjelasan Khusus Kerjasama</b><br/>
-Usaha penggemukan kambing yang disepakati adalah usaha pembesaran kambing/sapi terhitung mulai tanggal <?=tgl_indoku(date("Y-m-d"))?> hingga 15 Juni 2024.<br />
+Usaha penggemukan kambing yang disepakati adalah usaha pembesaran kambing terhitung mulai tanggal <?=tgl_indoku(date("Y-m-d"))?> hingga 15 Juni 2024.<br />
 <br />
 <b>Nilai dan Durasi Kerjasama</b><br/>
 1. Biaya untuk pengadaan 5 (lima) ekor bibit kambing adalah sebesar <?=rupiah($galeri["website"])?> yang akan digunakan untuk pembelian 5 (lima) ekor bibit
