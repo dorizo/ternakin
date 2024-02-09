@@ -100,7 +100,7 @@ selesai atau saat Perjanjian ini berakhir kepada Pihak Kedua. <br />
 Usaha penggemukan kambing yang disepakati adalah usaha pembesaran kambing terhitung mulai tanggal <?=tgl_indoku(date("Y-m-d"))?> hingga 15 Juni 2024.<br />
 <br />
 <b>Nilai dan Durasi Kerjasama</b><br/>
-1. Biaya untuk pengadaan 5 (lima) ekor bibit kambing adalah sebesar <?=rupiah($galeri["website"])?> yang akan digunakan untuk pembelian 5 (lima) ekor bibit
+1. Biaya untuk pengadaan  bibit kambing adalah sebesar <?=rupiah($galeri["website"])?> yang akan digunakan untuk pembelian bibit
 dan dikelola sampai tanggal 15 Juni 2024 oleh Pihak Pertama.<br/>
 2. Hasil penggemukan kambing yang telah diserahterimakan Pihak Pertama kepada Pihak Kedua
 bisa diperjual belikan oleh Pihak Kedua baik kepada pasar bebas maupun dijual kembali kepada
