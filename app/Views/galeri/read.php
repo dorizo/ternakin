@@ -97,8 +97,7 @@ pengelola TERNAKIN FARM akan menyerahkan kambing hasil setelah program penggemuk
 selesai atau saat Perjanjian ini berakhir kepada Pihak Kedua. <br />
 <br />
 <b>Penjelasan Khusus Kerjasama</b><br/>
-Usaha penggemukan kambing yang disepakati adalah usaha pembesaran kambing selama empat
-bulan terhitung mulai tanggal <?=tgl_indoku(date("Y-m-d"))?> hingga 15 Juni 2024.<br />
+Usaha penggemukan kambing yang disepakati adalah usaha pembesaran kambing/sapi terhitung mulai tanggal <?=tgl_indoku(date("Y-m-d"))?> hingga 15 Juni 2024.<br />
 <br />
 <b>Nilai dan Durasi Kerjasama</b><br/>
 1. Biaya untuk pengadaan 5 (lima) ekor bibit kambing adalah sebesar <?=rupiah($galeri["website"])?> yang akan digunakan untuk pembelian 5 (lima) ekor bibit
@@ -107,10 +106,10 @@ dan dikelola sampai tanggal 15 Juni 2024 oleh Pihak Pertama.<br/>
 bisa diperjual belikan oleh Pihak Kedua baik kepada pasar bebas maupun dijual kembali kepada
 Pihak Pertama.<br/>
 3. Jika penjualan kambing dibeli kembali oleh Pihak Pertama maka harga minimal penjualan yang
-disepakati adalah senilai Rp 3.500.000,- (tiga juta lima ratus ribu rupiah).
+disepakati adalah senilai Rp 3.500.000,- (tiga juta lima ratus ribu rupiah).<br/>
 4. Seluruh hasil dari transaksi penjualan kambing akan diberikan seluruhnya untuk Pihak Kedua
 setelah dipotong biaya yang muncul saat proses penjualan terjadi.<br/>
-5. Pihak Kedua menyerahkan uang sebesar Rp <?=rupiah($galeri["website"])?> yang akan digunakan oleh Pihak Pertama untuk pembelian bibit dan pembesaran terhitung
+5. Pihak Kedua menyerahkan uang sebesar <?=rupiah($galeri["website"])?> yang akan digunakan oleh Pihak Pertama untuk pembelian bibit dan pembesaran terhitung
 sejak tanggal <?=tgl_indoku(date("Y-m-d"))?> sampai dengan tanggal 15 Juni 2024.<br/>  <br />
 <b>Hak & Kewajiban</b><br/>
 1. Kambing yang diserahkan oleh Pihak Kedua akan dikelola di TERNAKIN FARM, yang berlokasi di
@@ -139,10 +138,10 @@ ditandatangani oleh kedua belah pihak, serta mempunyai kekuatan hukum yang sama.
 
       </div>
       <div class="modal-footer justify-content-between">
-      <div class="float-left"><button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button> </div>
+      <div class="float-left"><button type="button" class="btn btn-secondary"  style="width: 80px;"  data-dismiss="modal">Tutup</button> </div>
        <div class="float-right"><input type="checkbox" id="setuju" name="setuju" />
         <label for="scales" style="padding-right: 10px; font-size: 12px;">SAYA SETUJU </label>
-        <button type="button" onclick="done()"  class="btn btn-primary">Beli</button>
+        <button type="button" onclick="done()" style="width: 80px;" class="btn btn-primary">Beli</button>
       </div>
 
        
