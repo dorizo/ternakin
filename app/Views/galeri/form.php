@@ -24,6 +24,7 @@
                 <?= csrf_field() ?>
             <div class="form-group">
                 <label for="no">Nama</label>
+                <input type="hidden" class="form-control" value="<?=$galeri["id_galeri"]?>" name="id_galeri">
                 <input type="text" class="form-control" id="nama_lengkap" name="nama_lengkap">
                 <small id="emailHelp" class="form-text text-muted">(Nama lengkap sesuai NIK)</small>
             </div>

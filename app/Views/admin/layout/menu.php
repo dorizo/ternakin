@@ -157,6 +157,13 @@ $site        = $konfigurasi->listing();
               <p>Clients &amp; Portfolio</p>
             </a>
           </li>
+          
+          <li class="nav-item">
+            <a href="<?= base_url('admin/kurban') ?>" class="nav-link">
+              <i class="nav-icon fas fa-tasks"></i>
+              <p>KURBAN</p>
+            </a>
+          </li>
           <!-- Staff -->
           <!-- <li class="nav-item">
             <a href="#" class="nav-link">
